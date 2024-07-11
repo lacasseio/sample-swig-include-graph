@@ -1,0 +1,10 @@
+plugins {
+    id 'com.example.swig'
+}
+
+import com.example.swig.Swig
+
+tasks.named('swig', Swig) {
+    sources.from('foo.i')
+    includes.from('inc')
+}

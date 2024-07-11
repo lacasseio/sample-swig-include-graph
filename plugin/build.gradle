@@ -1,0 +1,17 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+repositories {
+    mavenCentral()
+}
+
+gradlePlugin {
+    // Define the plugin
+    plugins {
+        greeting {
+            id = 'com.example.swig'
+            implementationClass = 'com.example.swig.SwigPlugin'
+        }
+    }
+}
